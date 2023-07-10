@@ -1,17 +1,29 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+/*
+    Challenge : Project Setup
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+    - Create a components folder
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+    - create the following components in seperate files inside the components folder.
+    In each one, just render an h1 with the name of the component (e.g. return <h1> Navbar goes here</h1>):
+        - Navbar
+        - Main
+
+    - Create an App component outside the component folder (sibling to the index.js file)
+        - Have App render the Navbar and Main components
+    
+    - Import and render the App Component inside the index.js using ReactDOM
+        - Have App render the Navbar and Main components
+    
+    - Go to Google fonts and get the "Inter" font with weights 400, 600, and 700.
+    Put the links to those fonts ABOVE the style.css link in index.html (use the Link elements
+    instead of the @import or npm options for getting the fonts.)
+
+*/
+
+import React from "react";
+import  ReactDOM  from "react-dom";
+import "./style.css"
+import App from "./App";
+
+
+ReactDOM.render(<App/>,document.getElementById("root"))
